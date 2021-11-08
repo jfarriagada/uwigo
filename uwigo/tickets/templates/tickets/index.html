@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="col-10 offset-1 col-md-10 offset-md-1">
+    <div>
+        <form action="" method="GET">
+            {{ tickets_filter.form }}
+            <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+    </div>
+    <br>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Título</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Creación</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for item in tickets_list %}
+            <tr>
+                <td>{{ item.ticket_id }}</td>
+                <td>{{ item.title }}</td>
+                <td>{{ item.description }}</td>
+                <td>{{ item.state }}</td>
+                <td>{{ item.created | timesince}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+{% endblock %}

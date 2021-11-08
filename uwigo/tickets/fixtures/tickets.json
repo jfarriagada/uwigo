@@ -1,0 +1,80 @@
+[
+  {
+    "model": "tickets.ticket",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "ticket_id": "4575721",
+      "title": "test desarrollador",
+      "description": "proceso de selección desarrollador",
+      "state": "progress",
+      "created": "2021-11-07T20:17:46.061Z",
+      "updated": "2021-11-08T03:41:12.771Z"
+    }
+  },
+  {
+    "model": "tickets.ticket",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "ticket_id": "7236479",
+      "title": "conocer la oficina",
+      "description": "tour piso 2",
+      "state": "close",
+      "created": "2021-11-07T20:31:48.409Z",
+      "updated": "2021-11-08T03:40:13.371Z"
+    }
+  },
+  {
+    "model": "tickets.ticket",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "ticket_id": "9876236",
+      "title": "conocer la oficina",
+      "description": "tour invitado piso 7",
+      "state": "open",
+      "created": "2021-11-07T21:13:31.146Z",
+      "updated": "2021-11-08T03:38:53.937Z"
+    }
+  },
+  {
+    "model": "tickets.ticket",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "ticket_id": "8721478",
+      "title": "solicitud presupuesto",
+      "description": "reunión 16 hrs",
+      "state": "pending",
+      "created": "2021-11-08T02:52:47.430Z",
+      "updated": "2021-11-08T03:37:39.476Z"
+    }
+  },
+  {
+    "model": "tickets.ticket",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "ticket_id": "9890835",
+      "title": "toma de requerimientos",
+      "description": "reunión 9am cliente x",
+      "state": "open",
+      "created": "2021-11-08T02:56:23.814Z",
+      "updated": "2021-11-08T03:37:48.682Z"
+    }
+  },
+  {
+    "model": "tickets.ticket",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "ticket_id": "101010",
+      "title": "solución a x problema",
+      "description": "evaluar x opciones",
+      "state": "open",
+      "created": "2021-11-08T03:43:26.896Z",
+      "updated": "2021-11-08T03:43:26.896Z"
+    }
+  }
+]

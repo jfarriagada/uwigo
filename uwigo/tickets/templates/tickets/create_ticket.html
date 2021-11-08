@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br>
+<div class="col-10 offset-1 col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="d-flex justify-content-center">Crear Ticket</h1>
+            <hr>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <br>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-secondary" href="{% url 'tickets' %}">volver</a>
+                    &nbsp
+                    <input type="submit" value="enviar" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
